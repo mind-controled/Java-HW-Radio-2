@@ -9,8 +9,15 @@ class RadioTest {
     Radio radio = new Radio(10);
 
     @Test
-    void decreaseCurrentVolume() {
+    void increaseCurrentStation() {
+        radio.setCurrentStation(10);
+        radio.increaseCurrentStation();
+        assertEquals(0, radio.getCurrentStation());
+        System.out.println("Station:" + radio.getCurrentStation());
+    }
 
+    @Test
+    void decreaseCurrentVolume() {
         radio.setCurrentVolume(0);
         radio.decreaseCurrentVolume();
         assertEquals(0, radio.getCurrentVolume());
@@ -19,7 +26,6 @@ class RadioTest {
 
     @Test
     void decreaseCurrentVolumeWell() {
-
         radio.setCurrentVolume(90);
         radio.decreaseCurrentVolume();
         assertEquals(89, radio.getCurrentVolume());
@@ -29,7 +35,6 @@ class RadioTest {
 
     @Test
     void decreaseCurrentStation() {
-
         radio.setCurrentStation(0);
         radio.decreaseCurrentStation();
         assertEquals(10, radio.getCurrentStation());
@@ -45,18 +50,9 @@ class RadioTest {
         System.out.println("Station:" + radio.getCurrentStation());
     }
 
-    @Test
-    void increaseCurrentStation() {
-
-        radio.setCurrentStation(10);
-        radio.increaseCurrentStation();
-        assertEquals(0, radio.getCurrentStation());
-        System.out.println("Station:" + radio.getCurrentStation());
-    }
 
     @Test
     void increaseCurrentStationWell() {
-
         radio.setCurrentStation(5);
         radio.increaseCurrentStation();
         assertEquals(6, radio.getCurrentStation());
@@ -66,7 +62,6 @@ class RadioTest {
 
     @Test
     void increaseCurrentVolume() {
-
         radio.setCurrentVolume(100);
         radio.increaseCurrentVolume();
         assertEquals(100, radio.getCurrentVolume());
@@ -75,11 +70,9 @@ class RadioTest {
 
     @Test
     void increaseCurrentVolumeWell() {
-
         radio.setCurrentVolume(89);
         radio.increaseCurrentVolume();
         assertEquals(90, radio.getCurrentVolume());
         System.out.println("Volume:" + radio.getCurrentVolume());
     }
-
 }
