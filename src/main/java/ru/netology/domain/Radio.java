@@ -11,7 +11,7 @@ public class Radio {
     private String name;
     private int currentStation;
     private int currentVolume;
-    private static int maxStation = 10;
+    private int maxStation = 10;
     private final static int minStation = 0;
     private int maxVolume = 100;
     private int minVolume = 0;
