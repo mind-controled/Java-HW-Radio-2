@@ -32,7 +32,6 @@ public class Radio {
     }
 
     public void increaseCurrentStation() {
-
         if (currentStation >= maxStation) {
             currentStation = minStation;
             return;
@@ -43,7 +42,6 @@ public class Radio {
     }
 
     public void decreaseCurrentStation() {
-
         if (currentStation <= minStation) {
             currentStation = maxStation;
             return;
@@ -54,7 +52,6 @@ public class Radio {
     }
 
     public void increaseCurrentVolume() {
-
         if (currentVolume >= maxVolume) {
             currentVolume = maxVolume;
             return;
@@ -65,7 +62,6 @@ public class Radio {
     }
 
     public void decreaseCurrentVolume() {
-
         if (currentVolume <= minVolume) {
             currentVolume = minVolume;
             return;
@@ -90,15 +86,6 @@ public class Radio {
     public void setCurrentVolume(int currentVolume) {
         this.currentVolume = currentVolume;
     }
-
-
-    //public int getMaxStation() {
-    //    return maxStation;
-    //}
-
-    //public void setMaxStation(int maxStation) {
-    //    this.maxStation = maxStation;
-    //}
 
     public int getMinStation() {
         return minStation;
