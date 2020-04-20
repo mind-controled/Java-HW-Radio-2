@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RadioTest {
-
     Radio radio = new Radio(10);
 
     @Test
@@ -32,7 +31,6 @@ class RadioTest {
         System.out.println("Volume:" + radio.getCurrentVolume());
     }
 
-
     @Test
     void decreaseCurrentStation() {
         radio.setCurrentStation(0);
@@ -43,13 +41,11 @@ class RadioTest {
 
     @Test
     void decreaseCurrentStationWell() {
-
         radio.setCurrentStation(5);
         radio.decreaseCurrentStation();
         assertEquals(4, radio.getCurrentStation());
         System.out.println("Station:" + radio.getCurrentStation());
     }
-
 
     @Test
     void increaseCurrentStationWell() {
@@ -58,7 +54,6 @@ class RadioTest {
         assertEquals(6, radio.getCurrentStation());
         System.out.println("Station:" + radio.getCurrentStation());
     }
-
 
     @Test
     void increaseCurrentVolume() {
