@@ -9,7 +9,6 @@ class RadioTest {
     @Test
     void decreaseCurrentVolume() {
         Radio radio = new Radio();
-
         radio.setCurrentVolume(0);
         radio.decreaseCurrentVolume();
         assertEquals(0, radio.getCurrentVolume());
@@ -19,18 +18,15 @@ class RadioTest {
     @Test
     void decreaseCurrentVolumeWell() {
         Radio radio = new Radio();
-
         radio.setCurrentVolume(5);
         radio.decreaseCurrentVolume();
         assertEquals(4, radio.getCurrentVolume());
         System.out.println("Volume:" + radio.getCurrentVolume());
     }
 
-
     @Test
     void decreaseCurrentStation() {
         Radio radio = new Radio();
-
         radio.setCurrentStation(0);
         radio.decreaseCurrentStation();
         assertEquals(9, radio.getCurrentStation());
@@ -40,7 +36,6 @@ class RadioTest {
     @Test
     void decreaseCurrentStationWell() {
         Radio radio = new Radio();
-
         radio.setCurrentStation(5);
         radio.decreaseCurrentStation();
         assertEquals(4, radio.getCurrentStation());
@@ -50,7 +45,6 @@ class RadioTest {
     @Test
     void increaseCurrentStation() {
         Radio radio = new Radio();
-
         radio.setCurrentStation(9);
         radio.increaseCurrentStation();
         assertEquals(0, radio.getCurrentStation());
@@ -60,7 +54,6 @@ class RadioTest {
     @Test
     void increaseCurrentStationWell() {
         Radio radio = new Radio();
-
         radio.setCurrentStation(5);
         radio.increaseCurrentStation();
         assertEquals(6, radio.getCurrentStation());
@@ -71,7 +64,6 @@ class RadioTest {
     @Test
     void increaseCurrentVolume() {
         Radio radio = new Radio();
-
         radio.setCurrentVolume(10);
         radio.increaseCurrentVolume();
         assertEquals(10, radio.getCurrentVolume());
@@ -81,11 +73,9 @@ class RadioTest {
     @Test
     void increaseCurrentVolumeWell() {
         Radio radio = new Radio();
-
         radio.setCurrentVolume(5);
         radio.increaseCurrentVolume();
         assertEquals(6, radio.getCurrentVolume());
         System.out.println("Volume:" + radio.getCurrentVolume());
     }
-
 }
