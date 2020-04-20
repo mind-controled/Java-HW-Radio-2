@@ -36,9 +36,7 @@ public class Radio {
             currentStation = minStation;
             return;
         }
-
         currentStation += 1;
-
     }
 
     public void decreaseCurrentStation() {
@@ -46,9 +44,7 @@ public class Radio {
             currentStation = maxStation;
             return;
         }
-
         currentStation -= 1;
-
     }
 
     public void increaseCurrentVolume() {
@@ -56,9 +52,7 @@ public class Radio {
             currentVolume = maxVolume;
             return;
         }
-
         currentVolume += 1;
-
     }
 
     public void decreaseCurrentVolume() {
@@ -66,9 +60,7 @@ public class Radio {
             currentVolume = minVolume;
             return;
         }
-
         currentVolume -= 1;
-
     }
 
     public int getCurrentStation() {
@@ -110,5 +102,4 @@ public class Radio {
     public void setMinVolume(int minVolume) {
         this.minVolume = minVolume;
     }
-
 }
